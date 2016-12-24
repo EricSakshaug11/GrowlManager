@@ -1,0 +1,9 @@
+## Author: PuddlesRex
+## Interface: 70100
+## Title: GrowlManager
+## Notes: Beta test
+## Version: 0.2
+## DefaultState: Enabled
+## SavedVariablesPerCharacter: GrowlManager_Dungeon,GrowlManager_Overworld,GrowlManager_pvp,GrowlManager_message,GrowlManager_hasRun
+GrowlManager.lua
+GrowlManager.xml
