@@ -101,7 +101,8 @@ function GrowlManager_Warn()
 	if (GrowlManager_Message == nil) then
 		GrowlManager_Message = "Turn Growl Off!";
 	end
-	RaidNotice_AddMessage( RaidBossEmoteFrame, GrowlManager_Message, ChatTypeInfo["RAID_BOSS_EMOTE"] );
+        UIErrorsFrame:AddMessage(GrowlManager_Message, 1.0, 0.5, 0.0, 3);
+	--RaidNotice_AddMessage( RaidBossEmoteFrame, GrowlManager_Message, ChatTypeInfo["RAID_BOSS_EMOTE"] );
 end
 
 --Returns true if class is growlable, false otherwise
