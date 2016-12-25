@@ -106,8 +106,8 @@ end
 
 --Returns true if class is growlable, false otherwise
 function GrowlManager_IsGrowlableClass()
-	local classNum = select(3, UnitClass("Player"));
-	return (classNum == 3 or classNum == 9);
+	local className = select(2, UnitClass("Player"));
+	return (className == "HUNTER" or className == "WARLOCK");
 end
 
 --Returns 1 if growl or taunt is enabled, 0 otherwise
