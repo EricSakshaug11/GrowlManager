@@ -11,19 +11,19 @@ function GrowlManager_OnLoad(self)
 end
 
 function GrowlManager_setup()	
-	if (GrowlManager_IsGrowlableClass() == 0) then
-		print("This class has no Growl like features.");
-		GrowlManager_Dungeon = false;
-		GrowlManager_Overworld = false;
-		GrowlManager_pvp = false;
-		print("GrowlManager is now disabled on this character");
-	else
+	if (GrowlManager_IsGrowlableClass()) then
 		print("You are currently playing on a Hunter or Warlock.");
 		print("This character has no GrowlManager config!");
 		GrowlManager_Dungeon = true;
 		GrowlManager_Overworld = false;
 		GrowlManager_pvp = false;
 		print("GrowlManager has setup default config.");
+	else
+		print("This class has no Growl like features.");
+		GrowlManager_Dungeon = false;
+		GrowlManager_Overworld = false;
+		GrowlManager_pvp = false;
+		print("GrowlManager is now disabled on this character");
 	end
 	GrowlManager_hasRun = true;
 end
